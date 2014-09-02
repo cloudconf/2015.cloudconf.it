@@ -9,6 +9,10 @@
     "url": ""
   },
   "dependencies": {},
+  "scripts": {
+    "postinstall": "bower install",
+    "postupdate": "bower update"
+  },
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-less": "~0.11.0",
