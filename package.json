@@ -3,7 +3,6 @@
   "name": "layout-composer",
   "version": "1.0.0",
   "homepage": "http://www.corley.it",
-  "repository": {}, 
   "licenses": {
     "type": "Reserved",
     "url": ""
@@ -16,6 +15,8 @@
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-less": "~0.11.0",
+    "grunt-contrib-copy": "~0.6.0",
+    "grunt-contrib-clean": "~0.6.0",
     "grunt-contrib-watch": "~0.4.0"
   }
 }

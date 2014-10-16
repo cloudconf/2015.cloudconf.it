@@ -8,13 +8,51 @@
 module.exports = function (grunt) {
   'use strict';
 
-  // Project configuration.
   grunt.initConfig({
-
+    clean: [
+        './build/'
+    ],
+    copy: {
+      development_bower_js: {
+        files: [
+          {
+            src: [
+                'jquery/dist/jquery.js',
+                'bootstrap/dist/js/bootstrap.js'
+            ],
+            dest: 'build/assets/js/',
+            cwd: './bower_components',
+            expand:true
+          }
+        ]
+      },
+      development_images: {
+        files: [
+          {
+            src: [
+                'src/images/**'
+            ],
+            dest: 'build/assets/images/',
+            cwd: '.',
+            expand:true
+          }
+        ]
+      },
+      development_index_html: {
+        files: [
+          {
+            src: ['./*.html'],
+            dest: 'build/',
+            cwd: './src',
+            expand: true
+          }
+       ]
+      }
+    },
 	less: {
 	  development: {
 	    files: {
-	      "src/assets/compiled.css": "src/less/main.less"
+	      "build/assets/compiled.css": "src/less/main.less"
 	    }
 	  }
 	},
@@ -26,12 +64,16 @@ module.exports = function (grunt) {
 	  },
 	  others: {
 		  files: ['src/*.html', 'src/assets/**/*'],
+          tasks: ['development'],
 		  options: { livereload: true }
 	  }
 	}
   });
-  
+
+  grunt.registerTask("development", ['copy:development_bower_js', 'copy:development_index_html', 'copy:development_images', 'less:development']);
+
   grunt.loadNpmTasks('grunt-contrib-less');
+  grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  
+  grunt.loadNpmTasks('grunt-contrib-copy');
 }
