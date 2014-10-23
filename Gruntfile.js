@@ -26,6 +26,18 @@ module.exports = function (grunt) {
           }
         ]
       },
+      development_cname: {
+        files: [
+          {
+            src: [
+                'CNAME'
+            ],
+            dest: 'build/',
+            cwd: '.',
+            expand:true
+          }
+        ]
+      },
       development_images: {
         files: [
           {
@@ -70,7 +82,7 @@ module.exports = function (grunt) {
 	}
   });
 
-  grunt.registerTask("development", ['copy:development_bower_js', 'copy:development_index_html', 'copy:development_images', 'less:development']);
+  grunt.registerTask("development", ['copy:development_bower_js', 'copy:development_index_html', 'copy:development_images', 'copy:development_cname', 'less:development']);
 
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-clean');
