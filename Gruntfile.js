@@ -30,10 +30,10 @@ module.exports = function (grunt) {
         files: [
           {
             src: [
-                'src/images/**'
+                '**'
             ],
             dest: 'build/assets/images/',
-            cwd: '.',
+            cwd: './src/images',
             expand:true
           }
         ]
