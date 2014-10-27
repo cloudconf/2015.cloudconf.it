@@ -50,6 +50,18 @@ module.exports = function (grunt) {
           }
         ]
       },
+      development_fonts: {
+        files: [
+          {
+            src: [
+                '**'
+            ],
+            dest: 'build/assets/fonts/',
+            cwd: './bower_components/bootstrap/fonts/',
+            expand:true
+          }
+        ]
+      },
       development_index_html: {
         files: [
           {
@@ -82,7 +94,10 @@ module.exports = function (grunt) {
 	}
   });
 
-  grunt.registerTask("development", ['copy:development_bower_js', 'copy:development_index_html', 'copy:development_images', 'copy:development_cname', 'less:development']);
+  grunt.registerTask("development", ['copy:development_bower_js', 'copy:development_index_html',
+                     'copy:development_images', 'copy:development_cname', 'less:development',
+                     'copy:development_fonts'
+  ]);
 
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-clean');
