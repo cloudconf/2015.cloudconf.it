@@ -1,8 +1,7 @@
 {
-  "name": "layout-composer",
+  "name": "cloudconf-2015",
   "version": "1.0.0",
-  "devDependencies": {
+  "dependencies": {
     "bootstrap": "3.2.*"
-  },
-  "dependencies": {}
+  }
 }
