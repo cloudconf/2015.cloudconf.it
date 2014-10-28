@@ -65,7 +65,7 @@ module.exports = function (grunt) {
       development_index_html: {
         files: [
           {
-            src: ['./*.html'],
+            src: ['./**/*.html'],
             dest: 'build/',
             cwd: './src',
             expand: true
@@ -87,7 +87,7 @@ module.exports = function (grunt) {
 	    options: { livereload: true }
 	  },
 	  others: {
-		  files: ['src/*.html', 'src/assets/**/*'],
+		  files: ['src/**/*.html', 'src/assets/**/*'],
           tasks: ['development'],
 		  options: { livereload: true }
 	  }
