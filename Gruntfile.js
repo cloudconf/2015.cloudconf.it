@@ -9,9 +9,24 @@ module.exports = function (grunt) {
   'use strict';
 
   grunt.initConfig({
+    conf: require( './configuration.json' ),
     clean: [
         './build/'
     ],
+    s3: {
+      options: {
+        accessKeyId: "<%= conf.aws.accessKeyId %>",
+        secretAccessKey: "<%= conf.aws.secretAccessKey %>",
+        region: "<%= conf.aws.region %>",
+        cache: false,
+        access: "public-read",
+        bucket: "<%= conf.aws.bucket %>"
+      },
+      build: {
+        cwd: "./build/",
+        src: "**"
+      }
+    },
     copy: {
       development_bower_js: {
         files: [
@@ -99,8 +114,12 @@ module.exports = function (grunt) {
                      'copy:development_fonts'
   ]);
 
+  grunt.registerTask("deploy", ['clean', 'development', 's3'
+  ]);
+
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-aws');
 }
