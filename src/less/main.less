@@ -15,6 +15,8 @@ body.internal {
     height:500px;
     background-repeat: no-repeat;
     background-position:center center;
+    margin-left:0;
+    margin-right:0;
 }
 
 .land01 {
@@ -49,15 +51,14 @@ body.internal {
     display:inline-block;
 }
 .navbar-header {
-    width:100%;
 }
-.navbar-header .pull-right {
+.navbar .pull-right {
     margin-top:20px;
 }
-.navbar-header .pull-right .btn {
+.navbar .pull-right .btn-circle {
     margin-left:10px;
 }
-.navbar-header a.btn-link {
+.navbar .pull-right a.btn-link {
     font-size:22px;
     color:#111;
 }
@@ -129,7 +130,6 @@ h1, h2, h3 {
     background: @facebook-color;
     border-color:@facebook-border;
 }
-
 
 
 
@@ -243,7 +243,7 @@ h1, h2, h3 {
   background-color: #2e6da4 !important;
 }
 .timeline-badge.success {
-  background-color: #3f903f !important;
+  background-color: @brand-info !important;
 }
 .timeline-badge.warning {
   background-color: #f0ad4e !important;
@@ -403,6 +403,10 @@ h1, h2, h3 {
     border-top:10px solid @brand-success;
 }
 
+.navbar-nav > li > a.btn-circle:hover {
+    color:#000;
+}
+
 /** HOME END */
 
 
@@ -453,6 +457,24 @@ h1, h2, h3 {
         height: 60px;
         border-radius: 0;
         border-radius: 0;
+    }
+    .slogan2 input.btn.btn-lg,
+    .slogan2 input.btn.btn-lg:focus {
+        outline: none;
+        width: 100%;
+    }
+    .slogan2 button.btn,
+    .slogan2 a.btn {
+        width: 100%;
+    }
+
+}
+@media (max-width: @screen-sm-max) {
+    div.menu1 {
+        display:none;
+    }
+    span.menu2 {
+        display:block;
     }
 
 }
