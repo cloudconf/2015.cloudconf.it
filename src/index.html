@@ -89,6 +89,7 @@ document.createElement('video');
 	            <div id="navbar" class="navbar-collapse collapse menu1 pull-right">
 	              <ul class="nav navbar-nav">
                    <li><a href="http://bit.ly/1uiygH3" target="_blank" class="btn btn-lg btn-link">Call for Papers</a></li>
+                   <li><a href="#speakers" class="btn btn-lg btn-link">Speakers</a></li>
                    <li><a href="/tickets.html" class="btn btn-lg btn-link">Tickets</a></li>
                    <li><a href="/venue.html" class="btn btn-lg btn-link">Venue</a></li>
                    <li class="hidden-md hidden-lg"><a href="https://twitter.com/_CloudConf_" class="btn btn-lg btn-link">Twitter</a></li>
@@ -151,8 +152,35 @@ document.createElement('video');
                 
                 
                 
-                
                 <div class="row margin_75_0_0">
+                    <div class="col-lg-12">
+                        <a name="speakers"></a>
+                            <h2 class="text-center">Speakers!</h2>
+                            <h5 class="text-center margin_15_0">2 confirmed, other <strong>18</strong> to be announced!</h5>
+                            
+                            <div class="row text-center speakers margin_25_0_0">
+                                <div class="col-lg-4 speaker">
+                                    <span class="face erika"></span>
+                                    <h4>Erika Heidi <a href="http://twitter.com/erikaheidi" target="_blank" class="btn-link"><i class="fa fa-twitter"></i></a></h4>
+                                    <h5>Developer Advocate @ <a href="https://www.digitalocean.com/" target="_blank">DigitalOcean</a></h5>
+                                </div>
+                                <div class="col-lg-4 speaker">
+                                    <span class="face flavio"></span>
+                                    <h4>Flavio Percoco <a href="http://twitter.com/flaper87" target="_blank" class="btn-link"><i class="fa fa-twitter"></i></a></h4>
+                                    <h5>Engineer @ <a href="http://www.redhat.com/en" target="_blank">Red Hat</a>, <a href="http://www.openstack.org/" target="_blank">OpenStack</a> contributor</h5>
+                                </div>
+                                <div class="col-lg-4 speaker">
+                                    <span class="face you"></span>
+                                    <h4>You?</h4>
+                                    <h5>Submit <a href="http://bit.ly/1uiygH3" target="_blank">your proposal</a>!</h5>
+                                </div>
+                               
+                            </div>
+                            
+                    </div>
+                 </div>
+                
+                <div class="row margin_50_0_0">
                     <div class="col-lg-12">
                             <h2 class="text-center">Buy a ticket! The Super Early Bird tickets are running out!</h2>
                             <h5 class="text-center">Tickets include taxes, invoice will be send to your email</h5>
@@ -163,6 +191,7 @@ document.createElement('video');
 
                     </div>
                  </div>
+                
                 
                 <div class="row">
                     <div class="col-lg-6">
@@ -333,8 +362,11 @@ document.createElement('video');
 		        if(space > 0 )sloganM = space / 2;
 	        }
 
+	       
+	        
             $('.slogan').css('margin-top', sloganM);
             $('.bottom').css('margin-top', sloganM); 
+           
 	    };
 
 	    $( window ).resize(resizeW);
