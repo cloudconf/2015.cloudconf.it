@@ -387,6 +387,10 @@ h1, h2, h3 {
     border-bottom:1px solid #cdcdcd;
     padding-bottom:3px;
 }
+.slogan4 {
+  background:#f1f1f1;
+  padding-top:40px;
+}
 .slogan4 h1, .slogan4 h2, .slogan4 h3, .slogan4 h4 {
   color:#000;
 }
@@ -399,7 +403,9 @@ h1, h2, h3 {
     height:160px;
 }
 
-
+.space2 {
+  height:auto;
+}
 
 .space > span {
     float:left;
@@ -429,6 +435,12 @@ h1, h2, h3 {
 }
 .space-success {
     border-top:10px solid @brand-success;
+}
+.space-primary {
+    border-top:10px solid @brand-primary;
+}
+.space-warning {
+    border-top:10px solid @brand-warning;
 }
 
 .navbar-nav > li > a.btn-circle:hover {
@@ -462,6 +474,41 @@ h1, h2, h3 {
 
 /** VENUE END **/
 
+/** WORKSHOP START */
+
+.table tr.low {
+  background:#f1f1f1;
+  opacity:0.6;
+}
+.table td.topic {
+  color:#555;
+}
+.table td.topic strong {
+  color:#000;
+
+}
+
+.workshop p{
+  font-size:14px;
+  margin-bottom:20px;
+}
+.workshop p.intro{
+  font-size:17px;
+  border-bottom:1px solid #cdcdcd;
+  padding-bottom:15px;
+}
+#map_canvas {
+  height:300px;
+  border:5px solid @brand-info;
+}
+.location {
+  height:300px;
+  border:5px solid @brand-success;
+  background-image: url('images/workshop-location.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+/** WORKSHOP END */
 
 
 /** SPONSOR  START */
@@ -793,4 +840,3 @@ h1, h2, h3 {
     margin:100px 0px 0px 0px;
 }
 /* HELPER END */
-
