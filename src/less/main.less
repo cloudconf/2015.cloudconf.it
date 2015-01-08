@@ -82,7 +82,50 @@ body.internal {
     color:#111;
 }
 
-
+body.fix-navbar div.navbar {
+  height:44px;
+  padding:0;
+  position:fixed;
+  z-index:99999;
+  top:0;
+  width:100%;
+  background:#fafafa;
+  border-bottom:1px solid #cdcdcd;
+  min-height:auto;
+}
+body.fix-navbar div.navbar #navbar{
+    margin-top:0;
+ }
+body.fix-navbar div.navbar  .container{
+  width:100%;
+}
+body.fix-navbar div.navbar  h1{
+  font-size:22px;
+  background-size:contain;
+  padding:0;
+  padding-right:35px;
+}
+body.fix-navbar .navbar .pull-right a.btn-link {
+  font-size:18px;
+  padding-top:5px;
+  padding-bottom:5px;
+  margin-bottom:0;
+}
+body.fix-navbar .navbar .pull-right a {
+  margin-top:5px;
+}
+body.fix-navbar .btn-circle.btn-lg {
+    border-radius: 25px;
+    font-size: 14px;
+    height: 30px;
+    line-height: 1.13;
+    padding: 3px 5px;
+    width: 30px;
+    margin-bottom:0;
+} 
+body.fix-navbar .slogan {
+  margin-top:150px;
+}
 /** VIDEO START */
 video#bgvid {
     position: absolute; right: 0; bottom: 0;
@@ -445,6 +488,7 @@ h1, h2, h3 {
 .btn-zend {
   background:@zend;
   border-color:#8882BF;
+  color:#fff;
 }
 .navbar-nav > li > a.btn-circle:hover {
     color:#000;
@@ -497,6 +541,9 @@ h1, h2, h3 {
 }
 .workshop p.intro{
   font-size:17px;
+  padding-bottom:5px;
+}
+.workshop .speakers {
   border-bottom:1px solid #cdcdcd;
   padding-bottom:15px;
 }
