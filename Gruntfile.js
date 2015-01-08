@@ -74,7 +74,15 @@ module.exports = function (grunt) {
             dest: 'build/assets/fonts/',
             cwd: './bower_components/bootstrap/fonts/',
             expand:true
-          }
+          },
+          {
+              src: [
+                  '**'
+              ],
+              dest: 'build/assets/fonts/',
+              cwd: './src/assets/fonts/',
+              expand:true
+            }
         ]
       },
       development_index_html: {

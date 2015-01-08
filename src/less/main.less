@@ -2,10 +2,7 @@
 
 @import 'variables.less';
 
-@digitalocean: #2EB8E6;
-@redhat: #B22400;
-@zend: #8892BF;
-@mongo: #006B00;
+
 
 body {
     background:@brand-info;
@@ -439,10 +436,16 @@ h1, h2, h3 {
 .space-primary {
     border-top:10px solid @brand-primary;
 }
+.space-zend {
+    border-top:10px solid @zend;
+}
 .space-warning {
     border-top:10px solid @brand-warning;
 }
-
+.btn-zend {
+  background:@zend;
+  border-color:#8882BF;
+}
 .navbar-nav > li > a.btn-circle:hover {
     color:#000;
 }
@@ -576,6 +579,21 @@ h1, h2, h3 {
 .gianluca {
     background-image: url('images/speaker-gianarb.jpg');
     border-color:@digitalocean;
+}
+
+.workshop .enrico,
+.workshop .walter
+ {
+    border-color:@zend;
+}
+.workshop .gianluca {
+    border-color:@brand-danger;
+}
+.workshop .gabriele {
+    border-color:@brand-warning;
+}
+.workshop .walter2 {
+    border-color:@brand-info;
 }
 .you {
     background-image: url('images/you.png');
