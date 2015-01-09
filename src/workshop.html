@@ -173,7 +173,7 @@ document.createElement('video');
                             <span class="face walter"></span>
                             <h4>Walter Dal Mut <a href="http://twitter.com/walterdalmut" target="_blank" class="btn-link"><i class="fa fa-twitter"></i></a></h4>
                              <h5>Solution Architect <br> <a href="http://www.corley.it">Corley Cloud</a></h5>
-                        
+
                         </div>
                     </div>
                     <p>
@@ -640,9 +640,9 @@ document.createElement('video');
 
       $('a[href*=#]').on('click', function(event){
         event.preventDefault();
-        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+        $('html,body').animate({scrollTop:($(this.hash).offset().top - 75)}, 500);
       });
-      
+
       $(function () {
     	    $(window).scroll(function () {
     	        if ($(this).scrollTop() > $(window).height()) {
