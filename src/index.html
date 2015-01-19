@@ -249,6 +249,9 @@ document.createElement('video');
                             <div class="col-lg-4 col-sm-4 text-center">
                                 <p><strong>Thanks to our main sponsor!</strong></p>
                                 <p><a href="http://innomatic.io" target="_blank"><img src="assets/images/sponsor/innomatic2.png"  target="_blank" class="img-responsive img-thumbnail" alt=""></a></p>
+                                <p class="hidden-xs margin_60_0_0" style="display:none" id="modalplaceholder3over">
+                                  <i>write the promotional code <strong><span id="modalplaceholder3"></span></strong> to activate a <span class="label label-success">20 euros</span> deal!</i>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -554,6 +557,7 @@ document.createElement('video');
 	    	"ovh-sconto": "OVH Italia",
 	    	"ecs-sconto": "EnterCloudSuite",
 	    	"inno-sconto": "Innomatic",
+        "conf-sconto": "i nostri sponsor"
 	    };
 
 	    var deal = window.location.search;
@@ -562,7 +566,9 @@ document.createElement('video');
 	    	if(deals[deal]) {
 	    		$('#modalplaceholder').html(deals[deal]);
 	    		$('#modalplaceholder2').html(deal);
-	    		$('#dealModal').modal('show')
+	    		$('#modalplaceholder3').html(deal);
+	    		$('#modalplaceholder3over').show();
+	    		$('#dealModal').modal('show');
 	    	}
 	    }
 
