@@ -477,7 +477,9 @@ document.createElement('video');
                                    <!--<a href="http://tomshw.it" target="_blank"><img src="assets/images/sponsor/toms.png"  target="_blank" class="" alt=""></a>-->
                                    <a href="http://torino.grusp.org" target="_blank"><img src="assets/images/sponsor/pugto.png"  target="_blank" class="" alt=""></a>
                                    <a href="http://www.grusp.it" target="_blank"><img src="assets/images/sponsor/grusp.png"  target="_blank" class="" alt=""></a>
+                                   <br>
                                    <a href="https://www.facebook.com/groups/webdeveloperitaliani/?fref=ts" target="_blank"><img src="assets/images/sponsor/wdi.png"  target="_blank" class="" alt=""></a>
+                                   <a href="http://www.meetup.com/AWSusergroupItaly/" target="_blank"><img src="assets/images/sponsor/awsug.jpg"  target="_blank" class="" alt=""></a>
                                    <!--<a href="http://www.jugtorino.it/banner_droidcon.png" target="_blank"><img src="assets/images/sponsor/droidcon.png"  target="_blank" class="" alt=""></a>-->
                                </div>
                             </div>
@@ -539,6 +541,27 @@ document.createElement('video');
 			  </div>
 			</div>
 
+     <!-- Modal EN-->
+			<div class="modal fade" id="dealModal-en" tabindex="-1" role="dialog" aria-labelledby="dealModal-en" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-body">
+			        <h4>A deal for you!</h4>
+			        <p>
+                CloudConf is an event suited for developers, devOps and startups. The goal is create a great day where you'll be able to meet best specialists in cloud!
+			       </p>
+			         <p>
+			         Thanks to <strong><span id="modalplaceholder-en"></span></strong> you can buy a ticket for only <strong>29,90 &euro;</strong> instead of <strong>49,90 &euro;</strong>. We can help you with the organization of your trip, check the venue page!
+			         </p>
+			         <p><small>To activate the deal, just write <strong><i><span id="modalplaceholder2-en"></span></i></strong> in the ticket box in this page.</small></p>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-primary"  data-dismiss="modal">Ok!</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
 
 
     <!-- Development -->
@@ -586,7 +609,11 @@ document.createElement('video');
 	    	"toolbox-sconto": "il Toolbox Office",
         "conf-sconto": "i nostri sponsor",
         "wdi-sconto": "Web Developer Italiani",
-        "awsug-italy": "l'AWS User Group - Italy",
+        "awsug-italy": "l'AWS User Group - Italy"
+	    };
+
+	    var dealsEn = {
+        "awsug-uk": "AWS User Group - UK"
 	    };
 
 	    var deal = window.location.search;
@@ -598,6 +625,13 @@ document.createElement('video');
 	    		$('#modalplaceholder3').html(deal);
 	    		$('#modalplaceholder3over').show();
 	    		$('#dealModal').modal('show');
+	    	}
+	    	else if(dealsEn[deal]) {
+	    		$('#modalplaceholder-en').html(dealsEn[deal]);
+	    		$('#modalplaceholder2-en').html(deal);
+	    		$('#modalplaceholder3').html(deal);
+	    		$('#modalplaceholder3over').show();
+	    		$('#dealModal-en').modal('show');
 	    	}
 	    }
 
