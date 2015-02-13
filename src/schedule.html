@@ -245,19 +245,20 @@ This talk aims to answer the above questions and take a step further down the pa
 
 
             <div class="row">
-                <div class="col-lg-4">
-                  <div class="box">
-                      <div class="box-icon">
-                        <span class="face matteo"></span>
-                      </div>
-                      <div class="info text-center">
-                          <p><strong>14:40&nbsp;&nbsp;#deploy</strong></p>
-                          <h4 class="text-center">Live deployment on stage with Docker<br>and NScale</h4>
-                          <p>by Matteo Collina <a href="https://twitter.com/#!/matteocollina" target="_blank" class="btn-link"><i class="fa fa-twitter"></i></a><br>Software Engineer  @ <a href="http://www.nearform.com/" target="_blank">nearForm</a></p>
-                          <span class="invisible"><strong>Setting up new deployment environments is hard</strong>, error-prone and costly. The first generation of tools alert alert-success - like Chef and Puppet alert alert-success -  made this process feasible by handling how a machine must be configured, but they still require lots of maintenance and tuning.<br><br>The new generation of tools are based around immutable containers alert alert-success - mainly Docker-based alert alert-success - and they remove almost completely the need for custom machine configuration. However, these new architectures creates new problems: how do we manage an application composed of 10s or 100s of different containers?  NScale make things easier by providing a <strong>declarative environment</strong> to specify the system topology, and changing it is just a GIT revision away: nscale will figure out how to migrate from the current system to the desired configuration in a safe way. In this talk we will setup an application composed by multiple services, dockerize it, and deploy it in the Cloud with NScale.</span>
-                      </div>
-                  </div>
+
+              <div class="col-lg-4">
+                <div class="box">
+                    <div class="box-icon">
+                      <span class="face david"></span>
+                    </div>
+                    <div class="info text-center">
+                        <p><strong>16:30&nbsp;&nbsp;#infrastructure</strong></p>
+                        <h4 class="text-center">Best of both world: cloud vs colo vs bare metal</h4>
+                        <p>by David Mytton <a href="https://twitter.com/davidmytton" target="_blank" class="btn-link"><i class="fa fa-twitter"></i></a><br>CEO @ <a href="https://serverdensity.com" target="_blank">Server Density</a></p>
+                        <span class="invisible">Everyone deploy to the cloud! Unlimited scaling and the best pricing! Or is it? This talk will examine <strong>different deployment strategies</strong>, how scaling differs between them and how to migrate from one to the other. It will consider cloud environments, bare metal and building out your own equipment in a colo facility. <br><br>And it will look at real examples of interesting approaches and war stories from the major infrastructure providers including <strong>AWS, Google Cloud and Softlayer</strong>.</span>
+                    </div>
                 </div>
+              </div>
                 <div class="col-lg-4">
                   <div class="box">
                       <div class="box-icon">
@@ -363,13 +364,13 @@ In this talk we will see how we can exploit scaling features of GCP PaaS and Iaa
                 <div class="col-lg-4">
                   <div class="box">
                       <div class="box-icon">
-                        <span class="face david"></span>
+                        <span class="face matteo"></span>
                       </div>
                       <div class="info text-center">
-                          <p><strong>16:30&nbsp;&nbsp;#infrastructure</strong></p>
-                          <h4 class="text-center">Best of both world: cloud vs colo vs bare metal</h4>
-                          <p>by David Mytton <a href="https://twitter.com/davidmytton" target="_blank" class="btn-link"><i class="fa fa-twitter"></i></a><br>CEO @ <a href="https://serverdensity.com" target="_blank">Server Density</a></p>
-                          <span class="invisible">Everyone deploy to the cloud! Unlimited scaling and the best pricing! Or is it? This talk will examine <strong>different deployment strategies</strong>, how scaling differs between them and how to migrate from one to the other. It will consider cloud environments, bare metal and building out your own equipment in a colo facility. <br><br>And it will look at real examples of interesting approaches and war stories from the major infrastructure providers including <strong>AWS, Google Cloud and Softlayer</strong>.</span>
+                          <p><strong>14:40&nbsp;&nbsp;#deploy</strong></p>
+                          <h4 class="text-center">Live deployment on stage with Docker<br>and NScale</h4>
+                          <p>by Matteo Collina <a href="https://twitter.com/#!/matteocollina" target="_blank" class="btn-link"><i class="fa fa-twitter"></i></a><br>Software Engineer  @ <a href="http://www.nearform.com/" target="_blank">nearForm</a></p>
+                          <span class="invisible"><strong>Setting up new deployment environments is hard</strong>, error-prone and costly. The first generation of tools alert alert-success - like Chef and Puppet alert alert-success -  made this process feasible by handling how a machine must be configured, but they still require lots of maintenance and tuning.<br><br>The new generation of tools are based around immutable containers alert alert-success - mainly Docker-based alert alert-success - and they remove almost completely the need for custom machine configuration. However, these new architectures creates new problems: how do we manage an application composed of 10s or 100s of different containers?  NScale make things easier by providing a <strong>declarative environment</strong> to specify the system topology, and changing it is just a GIT revision away: nscale will figure out how to migrate from the current system to the desired configuration in a safe way. In this talk we will setup an application composed by multiple services, dockerize it, and deploy it in the Cloud with NScale.</span>
                       </div>
                   </div>
                 </div>
