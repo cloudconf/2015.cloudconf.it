@@ -77,30 +77,29 @@ document.createElement('video');
         <div  role="navigation" class="navbar top">
             <div class="container ">
 
+              <div class="navbar-header ">
+                <button data-target="#navbar" data-toggle="collapse" class="navbar-toggle" type="button">
+                  <i class="fa fa-bars"></i>
+                </button>
+               <h1><strong>CloudConf</strong> 2015</h1>
 
-	            <div class="navbar-header ">
-	              <button data-target="#navbar" data-toggle="collapse" class="navbar-toggle" type="button">
-	                <i class="fa fa-bars"></i>
-	              </button>
-	             <h1><strong>CloudConf</strong> 2015</h1>
-
-	            </div>
-	            <div id="navbar" class="navbar-collapse collapse menu1 pull-right">
-	              <ul class="nav navbar-nav">
+              </div>
+              <div id="navbar" class="navbar-collapse collapse menu1 pull-right">
+                <ul class="nav navbar-nav">
                    <!-- <li><a href="http://bit.ly/1uiygH3" target="_blank" class="btn btn-lg btn-link">Call for Papers</a></li>-->
                    <li><a href="/workshop.html" class="btn btn-lg btn-link">Workshops</a></li>
                    <li><a href="/schedule.html" class="btn btn-lg btn-link">Speakers &amp; Schedule</a></li>
+                   <li><a href="/sponsors.html" class="btn btn-lg btn-link">Sponsors</a></li>
                    <li><a href="/tickets.html" class="btn btn-lg btn-link">Tickets</a></li>
                    <li><a href="/venue.html" class="btn btn-lg btn-link">Venue</a></li>
                    <li class="hidden-md hidden-lg"><a href="https://twitter.com/_CloudConf_" class="btn btn-lg btn-link">Twitter</a></li>
                    <li class="hidden-md hidden-lg"><a href="https://www.facebook.com/pages/Cloud-Conf-Italia/140265592804313" class="btn btn-lg btn-link">Facebook</a></li>
                    <li class="hidden-sm hidden-xs"><a href="https://twitter.com/_CloudConf_" class="btn btn-info btn-circle btn-lg btn-twitter"><i class="fa fa-twitter"></i></a></li>
                    <li class="hidden-sm hidden-xs"><a href="https://www.facebook.com/pages/Cloud-Conf-Italia/140265592804313" class="btn btn-primary btn-circle btn-lg btn-facebook"><i class="fa fa-facebook"></i></a></li>
-	              </ul>
-	            </div>
-	        </div>
+                </ul>
+              </div>
+          </div>
         </div>
-
         <div class="slogan slogan2 text-center">
             <div class="container">
                 <div class="row">
@@ -294,7 +293,7 @@ document.createElement('video');
                 <div class="row margin_50_0_0">
                     <div class="col-lg-12">
 
-                            <h2 class="text-center">Remaining tickets are running out!</h2>
+                            <h2 class="text-center">Sold out!</h2>
                             <h5 class="text-center">Tickets include taxes, invoice will be send to your email</h5>
                         <div class="row">
                             <div class="col-lg-8 col-sm-8">
@@ -727,14 +726,14 @@ document.createElement('video');
 	    		$('#modalplaceholder2').html(deal);
 	    		$('#modalplaceholder3').html(deal);
 	    		$('#modalplaceholder3over').show();
-	    		$('#dealModal').modal('show');
+	    		//$('#dealModal').modal('show');
 	    	}
 	    	else if(dealsEn[deal]) {
 	    		$('#modalplaceholder-en').html(dealsEn[deal]);
 	    		$('#modalplaceholder2-en').html(deal);
 	    		$('#modalplaceholder3').html(deal);
 	    		$('#modalplaceholder3over').show();
-	    		$('#dealModal-en').modal('show');
+	    		//$('#dealModal-en').modal('show');
 	    	}
 	    }
 
